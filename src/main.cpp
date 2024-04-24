@@ -18,7 +18,8 @@ int main() {
 		std::cout << "Введите зачисляемую сумму: "; std::cin >> sum;
 
 		automata.coin(sum);
-		automata.getMenu({ "Espresso", "Latte", "Americano", "Lungo" }, { 50,65,55,70 });
+		automata.getMenu({"Espresso", "Latte", "Americano", "Lungo"},
+			{50, 65, 55, 70});
 
 		std::cout << "Введите номер желаемой позиции: "; std::cin >> decision;
 
@@ -26,8 +27,7 @@ int main() {
 		if (automata.check(decision)) {
 			automata.cook(decision);
 			automata.finish();
-		}
-		else {
+		} else {
 			std::cout << "Пополнить баланс? (1) да, (2) нет: "; std::cin >> option;
 			switch (option) {
 			case 1: {
@@ -45,6 +45,5 @@ int main() {
 			}
 		}
 	}
-
 	return 0;
 }
