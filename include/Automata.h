@@ -18,7 +18,7 @@ class Automata {
 	void on();
 	void off();
 	void coin(int cash);
-	void getMenu(const std::vector<std::string>& menu, 
+	void getMenu(const std::vector<std::string>& menu,
 const std::vector<int>& prices);
 	States getState();
 	void choice(int position);
