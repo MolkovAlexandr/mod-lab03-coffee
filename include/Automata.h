@@ -1,4 +1,4 @@
-// Copyright 2022 MolkovAlexandr
+// Copyright 2024 MolkovAlexandr
 
 #pragma once
 #include<string>
