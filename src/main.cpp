@@ -3,8 +3,7 @@
 #include<iostream>
 #include"Automata.h"
 
-int main()
-{
+int main() {
 	setlocale(LC_ALL, "1251");
 
 	Automata automata;
@@ -15,8 +14,7 @@ int main()
 
 	automata.on();
 
-	while (true)
-	{
+	while (true) {
 		std::cout << "Введите зачисляемую сумму: "; std::cin >> sum;
 
 		automata.coin(sum);
@@ -25,27 +23,21 @@ int main()
 		std::cout << "Введите номер желаемой позиции: "; std::cin >> decision;
 
 		automata.choice(decision);
-		if (automata.check(decision))
-		{
+		if (automata.check(decision)) {
 			automata.cook(decision);
 			automata.finish();
 		}
-		else
-		{
+		else {
 			std::cout << "Пополнить баланс? (1) да, (2) нет: "; std::cin >> option;
-			switch (option)
-			{
-			case 1:
-			{
+			switch (option) {
+			case 1: {
 				break;
 			}
-			case 2:
-			{
+			case 2: {
 				automata.cancel();
 				break;
 			}
-			default:
-			{
+			default: {
 				std::cout << "Невозможная операция";
 				exit(0);
 				break;
