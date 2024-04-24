@@ -20,7 +20,7 @@ void Automata::coin(int cash) {
 	this->cash += cash;
 }
 
-void Automata::getMenu(const std::vector<std::string>&menu, 
+void Automata::getMenu(const std::vector<std::string>&menu,
 const std::vector<int>&prices) {
 	this->menu = menu; this->prices = prices;
 }
