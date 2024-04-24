@@ -1,7 +1,7 @@
 // Copyright 2024 MolkovAlexandr
 
-#ifndef UNTITLED1_AUTOMATA_H
-#define UNTITLED1_AUTOMATA_H
+#ifndef INCLUDE_AUTOMATA_H_
+#define INCLUDE_AUTOMATA_H_
 
 #include<string>
 #include<vector>
@@ -15,11 +15,13 @@ class Automata {
 	States state;
 
 public:
+
 	Automata();
 	void on();
 	void off();
 	void coin(int cash);
-	void getMenu(const std::vector<std::string>& menu, const std::vector<int>& prices);
+	void getMenu(const std::vector<std::string>& menu, 
+const std::vector<int>& prices);
 	States getState();
 	void choice(int position);
 	bool check(int position);
@@ -27,4 +29,4 @@ public:
 	void cook(int position);
 	void finish();
 };
-#endif //UNTITLED1_AUTOMATA_H
+#endif //INCLUDE_AUTOMATA_H_
