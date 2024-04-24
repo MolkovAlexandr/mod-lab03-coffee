@@ -1,3 +1,5 @@
+// Copyright 2022 MolkovAlexandr
+
 #pragma once
 #include<string>
 #include<vector>
