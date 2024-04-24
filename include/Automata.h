@@ -1,13 +1,14 @@
 // Copyright 2024 MolkovAlexandr
 
-#pragma once
+#ifndef UNTITLED1_AUTOMATA_H
+#define UNTITLED1_AUTOMATA_H
+
 #include<string>
 #include<vector>
 
 enum States { OFF, WAIT, ACCEPT, CHECK, COOK };
 
-class Automata
-{
+class Automata {
 	int cash;
 	std::vector<std::string>menu;
 	std::vector<int>prices;
@@ -26,3 +27,4 @@ public:
 	void cook(int position);
 	void finish();
 };
+#endif //UNTITLED1_AUTOMATA_H
